@@ -48,6 +48,14 @@ function Footer() {
             >
               <i className="fab fa-google fa-lg"></i>
             </a>
+            <a
+          href="https://github.com/desaweb92?tab=repositories"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-purple-500"
+        >
+          <i className="fab fa-github fa-lg"></i>
+        </a>
           </div>
       </div>
     </footer>

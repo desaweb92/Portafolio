@@ -139,6 +139,14 @@ const SkillsSection = () => {
             >
               <i className="fab fa-google fa-lg"></i>
             </a>
+            <a
+          href="https://github.com/desaweb92?tab=repositories"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-purple-500"
+        >
+          <i className="fab fa-github fa-lg"></i>
+        </a>
           </div>
       {Object.entries(categories).map(([category, skills]) => (
         <div key={category} className="mb-10 ">
