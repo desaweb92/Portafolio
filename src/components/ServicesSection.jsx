@@ -61,7 +61,7 @@ const ServicesSection = () => {
         overlayClassName="fixed inset-0 bg-gray-800 bg-opacity-75"
       >
         <motion.div
-          className="bg-white p-6 rounded-lg max-w-md mx-auto text-center relative border-t-[6px] border-b-[6px] border-l-[6px] border-r-[6px] border-purple-500"
+          className="w-[80%] bg-white p-6 rounded-lg max-w-md mx-auto text-center relative border-t-[6px] border-b-[6px] border-l-[6px] border-r-[6px] border-purple-500"
           style={neonShadowStyle}
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}

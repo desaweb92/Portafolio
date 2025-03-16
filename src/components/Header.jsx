@@ -1,11 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import "../index.css";
-
+import { useNavigate } from "react-router-dom";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+  const navigate = useNavigate();
+
+  const handleNavigation = (path) => {
+    navigate(path);
+    setIsMobileMenuOpen(false); // Cerrar el menú móvil al navegar
   };
 
   return (
@@ -66,11 +72,14 @@ const Header = () => {
       </div>
 
       <div className="md:hidden">
-        <button
-          onClick={toggleMenu}
-          className="text-white focus:outline-none"
-        >
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <button onClick={toggleMenu} className="text-white focus:outline-none">
+          <svg
+            className="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
             {isMenuOpen ? (
               <path
                 strokeLinecap="round"
@@ -90,15 +99,38 @@ const Header = () => {
         </button>
       </div>
 
-      <nav className={`absolute top-full right-0 mt-2 bg-black p-4 rounded-lg shadow-lg transform transition-transform duration-300 md:static md:bg-transparent md:shadow-none md:p-0 md:mt-0 md:transform-none ${isMenuOpen ? 'translate-y-0' : '-translate-y-[300px]'}`}>
+      <nav
+        className={`absolute top-full right-0 mt-2 bg-black p-4 rounded-lg shadow-lg transform transition-transform duration-300 md:static md:bg-transparent md:shadow-none md:p-0 md:mt-0 md:transform-none ${
+          isMenuOpen ? "translate-y-0" : "-translate-y-[300px]"
+        }`}
+      >
         <ul className="flex flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-4">
-          <li><a href="/" className="hover:text-pink-500">Home</a></li>
-          <li><a href="/stepssection" className="hover:text-pink-500">Mis conocimientos</a></li>
-          <li><a href="/projects" className="hover:text-pink-500">Proyectos</a></li>
+          <li>
+            <button
+              onClick={() => handleNavigation("/")}
+              className="hover:text-pink-500"
+            >
+              Inicio
+            </button>
+          </li>
+          <li>
+            <button
+              onClick={() => handleNavigation("/stepssection")}
+              className="hover:text-pink-500"
+            >
+              Mis conocimientos
+            </button>
+          </li>
+          <li>
+            <button
+              onClick={() => handleNavigation("/projects")}
+              className="hover:text-pink-500"
+            >
+              Proyectos
+            </button>
+          </li>
         </ul>
       </nav>
-
-   
     </header>
   );
 };

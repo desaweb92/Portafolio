@@ -1,8 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaReact, FaNodeJs } from 'react-icons/fa'; // Ejemplo de iconos
 
-const ProjectCard = ({ title, description, link, imageSrc }) => {
+const ProjectCard = ({ title, description, link, imageSrc, icons }) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 50 }}
@@ -20,8 +19,9 @@ const ProjectCard = ({ title, description, link, imageSrc }) => {
         />
       )}
       <div className="flex items-center mb-2">
-        <FaReact className="text-blue-500 mr-2" />
-        <FaNodeJs className="text-green-500" />
+        {icons && icons.map((Icon, index) => (
+          <Icon key={index} className="text-blue-500 mr-2" />
+        ))}
         <h2 className="text-xl font-semibold ml-2">{title}</h2>
       </div>
       <p className="text-gray-700 mb-4">{description}</p>
