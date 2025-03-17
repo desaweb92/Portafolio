@@ -2,6 +2,7 @@ import React from "react";
 import ProjectCard from "../components/ProjectCard";
 import TarjetaAnimada from "../assets/images/Tarjeta_animada.jpg";
 import LogoSkillForge from "../assets/images/Logo-SkillForge.jpeg";
+import LogoGogoz from "../assets/images/Imagen-logo.jpg";
 import { FaReact, FaNodeJs, FaDesktop } from 'react-icons/fa';
 import { TbBrandReactNative } from "react-icons/tb";
 
@@ -16,7 +17,7 @@ const Projects = () => {
     },
     {
       title: "Proyecto 2",
-      description: "Tarjeta animada en React.",
+      description: "Tarjeta animada en React y JS.",
       link: "https://tarjetaanimada.netlify.app/",
       imageSrc: TarjetaAnimada,
       icons: [FaReact], // Icono para el segundo proyecto
@@ -30,10 +31,10 @@ const Projects = () => {
     },
     {
       title: "Proyecto 4",
-      description: "Descripción del cuarto proyecto. Este proyecto es una aplicación de escritorio.",
-      link: "https://proyecto4.com",
-      imageSrc: "https://via.placeholder.com/300x200?text=Proyecto+4",
-      icons: [FaDesktop], // Icono para el cuarto proyecto
+      description: "Landing page en react y JS.",
+      link: "landingogoz.netlify.app",
+      imageSrc: LogoGogoz,
+      icons: [FaReact, FaNodeJs], // Icono para el cuarto proyecto
     },
   ];
 
