@@ -12,7 +12,7 @@ const Projects = () => {
     {
       title: "Proyecto 1",
       description: "Tarjeta animada React Native.",
-      link: "felizcumplecosita.netlify.app",
+      link: "https://felizcumplecosita.netlify.app",
       imageSrc: TarjetaAnimada,
       icons: [TbBrandReactNative], // Icono para el primer proyecto
     },
