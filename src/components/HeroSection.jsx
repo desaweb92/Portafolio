@@ -6,7 +6,7 @@ const HeroSection = () => {
   return (
     <section className="text-center py-20 bg-cover bg-center bg-no-repeat bg-[url('/src/assets/images/bg-home1.jpg')]">
       <h2 className="text-[40px] font-bold mb-4 text-white font-big-shoulders ">
-        Bienvenido a mi Portafolio
+        Bienvenido a mi portafolio
       </h2>
       <p className="text-[20px] font-semibold mb-8 text-black font-raleway-regular">
         Explora mis proyectos.
