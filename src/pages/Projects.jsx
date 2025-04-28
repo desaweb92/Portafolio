@@ -3,6 +3,7 @@ import ProjectCard from "../components/ProjectCard";
 import TarjetaAnimada from "../assets/images/Tarjeta_animada.jpg";
 import LogoSkillForge from "../assets/images/Logo-SkillForge.jpeg";
 import LogoGogoz from "../assets/images/Imagen-logo.jpg";
+import LogoHPT from "../assets/images/logo.png";
 import { FaReact, FaNodeJs, FaDesktop } from 'react-icons/fa';
 import { TbBrandReactNative } from "react-icons/tb";
 
@@ -34,6 +35,13 @@ const Projects = () => {
       description: "Landing page en react y JS.",
       link: "landingogoz.netlify.app",
       imageSrc: LogoGogoz,
+      icons: [FaReact, FaNodeJs], // Icono para el cuarto proyecto
+    },
+    {
+      title: "Proyecto 5",
+      description: "Landing page precios.",
+      link: "precios-helados-para-todos.netlify.app",
+      imageSrc: LogoHPT,
       icons: [FaReact, FaNodeJs], // Icono para el cuarto proyecto
     },
   ];
