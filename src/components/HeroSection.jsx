@@ -1,25 +1,28 @@
 import { motion } from "framer-motion";
 import React from "react";
+import { Link } from "react-router-dom";
 import "../index.css";
 
 const HeroSection = () => {
   return (
     <section className="text-center py-20 bg-cover bg-center bg-no-repeat bg-[url('/src/assets/images/bg-home1.jpg')]">
-      <h2 className="text-[40px] font-bold mb-4 text-white font-big-shoulders ">
+      <h2 className="text-[40px] font-bold mb-4 text-white font-big-shoulders">
         Bienvenido a mi portafolio
       </h2>
       <p className="text-[20px] font-semibold mb-8 text-black font-raleway-regular">
         Explora mis proyectos.
       </p>
-      <motion.a
-        href="/projects"
-        className="bg-[#5411F5] text-white font-bold px-6 py-3 rounded font-raleway-regular inline-block"
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.9 }}
-        transition={{ type: "spring", stiffness: 400, damping: 10 }}
-      >
-        Empezar
-      </motion.a>
+      <Link to="/projects">
+        <motion.button
+          className="bg-[#5411F5] text-white font-bold px-6 py-3 rounded font-raleway-regular inline-block"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          transition={{ type: "spring", stiffness: 400, damping: 10 }}
+        >
+          Empezar
+        </motion.button>
+      </Link>
+
       <div className="mt-4 space-x-4 flex justify-center">
         <a
           href="https://wa.me/04123687582"
