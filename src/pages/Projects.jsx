@@ -26,21 +26,21 @@ const Projects = () => {
     {
       title: "Proyecto 3",
       description: "Proyecto personal, en React y JS.",
-      link: "skillforgeandrea.netlify.app",
+      link: "https://skillforgeandrea.netlify.app",
       imageSrc: LogoSkillForge,
       icons: [FaReact, FaNodeJs], // Iconos para el tercer proyecto
     },
     {
       title: "Proyecto 4",
       description: "Landing page en react y JS.",
-      link: "landingogoz.netlify.app",
+      link: "https://landingogoz.netlify.app",
       imageSrc: LogoGogoz,
       icons: [FaReact, FaNodeJs], // Icono para el cuarto proyecto
     },
     {
       title: "Proyecto 5",
       description: "Landing page precios.",
-      link: "precios-helados-para-todos.netlify.app",
+      link: "https://precios-helados-para-todos.netlify.app",
       imageSrc: LogoHPT,
       icons: [FaReact, FaNodeJs], // Icono para el cuarto proyecto
     },
