@@ -26,7 +26,7 @@ const Projects = () => {
     {
       title: "Proyecto 3",
       description: "Proyecto personal, en React y JS.",
-      link: "https://skillforgeandrea.netlify.app",
+      link: "https://skillforgecreative.netlify.app",
       imageSrc: LogoSkillForge,
       icons: [FaReact, FaNodeJs], // Iconos para el tercer proyecto
     },
