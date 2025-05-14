@@ -4,6 +4,8 @@ import TarjetaAnimada from "../assets/images/Tarjeta_animada.jpg";
 import LogoSkillForge from "../assets/images/Logo-SkillForge.jpeg";
 import LogoGogoz from "../assets/images/Imagen-logo.jpg";
 import LogoHPT from "../assets/images/logo.png";
+import LogoEnvia from "../assets/images/logo-envia-01.jpg"
+import LogoLucca from "../assets/images/logo-lucca-2.png"
 import { FaReact, FaNodeJs, FaDesktop } from 'react-icons/fa';
 import { TbBrandReactNative } from "react-icons/tb";
 
@@ -43,6 +45,20 @@ const Projects = () => {
       link: "https://precios-helados-para-todos.netlify.app",
       imageSrc: LogoHPT,
       icons: [FaReact, FaNodeJs], // Icono para el cuarto proyecto
+    },
+     {
+      title: "Proyecto 6",
+      description: "Landing rastreos envía.",
+      link: "https://rastreo-envia.netlify.app",
+      imageSrc: LogoEnvia,
+      icons: [FaReact, FaNodeJs], // Icono para el sexto proyecto
+    },
+       {
+      title: "Proyecto 7",
+      description: "Landing rastreos envía.",
+      link: "https://tourmaline-kitten-2ecfb5.netlify.app",
+      imageSrc: LogoLucca,
+      icons: [FaReact, FaNodeJs], // Icono para el septimo proyecto
     },
   ];
 
