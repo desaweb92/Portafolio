@@ -1,60 +1,44 @@
 import React from "react";
 import ProjectCard from "../components/ProjectCard";
-import TarjetaAnimada from "../assets/images/Tarjeta_animada.jpg";
-import LogoSkillForge from "../assets/images/Logo-SkillForge.jpeg";
 import LogoGogoz from "../assets/images/Imagen-logo.jpg";
 import LogoHPT from "../assets/images/logo.png";
 import LogoEnvia from "../assets/images/logo-envia-01.jpg"
 import LogoLucca from "../assets/images/logo-lucca-2.png"
-import { FaReact, FaNodeJs, FaDesktop } from 'react-icons/fa';
-import { TbBrandReactNative } from "react-icons/tb";
-
+import { FaReact, FaNodeJs } from 'react-icons/fa';
+const LogoDiseño = "https://i.imgur.com/SKwdMty.png";
 const Projects = () => {
   const projects = [
+    
     {
       title: "Proyecto 1",
-      description: "Tarjeta animada React Native.",
-      link: "https://felizcumplecosita.netlify.app",
-      imageSrc: TarjetaAnimada,
-      icons: [TbBrandReactNative], // Icono para el primer proyecto
-    },
-    {
-      title: "Proyecto 2",
-      description: "Tarjeta animada en React y JS.",
-      link: "https://tarjetaanimada.netlify.app/",
-      imageSrc: TarjetaAnimada,
-      icons: [FaReact], // Icono para el segundo proyecto
-    },
-    {
-      title: "Proyecto 3",
       description: "Proyecto personal, en React y JS.",
-      link: "https://skillforgecreative.netlify.app",
-      imageSrc: LogoSkillForge,
+      link: "https://propuestastudio.netlify.app",
+      imageSrc: LogoDiseño,
       icons: [FaReact, FaNodeJs], // Iconos para el tercer proyecto
     },
     {
-      title: "Proyecto 4",
+      title: "Proyecto 2",
       description: "Landing page en react y JS.",
       link: "https://landingogoz.netlify.app",
       imageSrc: LogoGogoz,
       icons: [FaReact, FaNodeJs], // Icono para el cuarto proyecto
     },
     {
-      title: "Proyecto 5",
+      title: "Proyecto 3",
       description: "Landing page precios.",
       link: "https://precios-helados-para-todos.netlify.app",
       imageSrc: LogoHPT,
       icons: [FaReact, FaNodeJs], // Icono para el cuarto proyecto
     },
      {
-      title: "Proyecto 6",
+      title: "Proyecto 4",
       description: "Landing rastreos envía.",
       link: "https://rastreo-envia.netlify.app",
       imageSrc: LogoEnvia,
       icons: [FaReact, FaNodeJs], // Icono para el sexto proyecto
     },
        {
-      title: "Proyecto 7",
+      title: "Proyecto 5",
       description: "Landing rastreos envía.",
       link: "https://tourmaline-kitten-2ecfb5.netlify.app",
       imageSrc: LogoLucca,
