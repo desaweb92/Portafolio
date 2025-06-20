@@ -39,7 +39,7 @@ const Projects = () => {
     },
        {
       title: "Proyecto 5",
-      description: "Landing rastreos envía.",
+      description: "Landing Lucca.",
       link: "https://tourmaline-kitten-2ecfb5.netlify.app",
       imageSrc: LogoLucca,
       icons: [FaReact, FaNodeJs], // Icono para el septimo proyecto
